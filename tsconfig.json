@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext", "ESNext.Array"],
+    "allowJs": false,
+    "skipLibCheck": true,
+    // Needed to import React  without `import * as React from 'react'`
+    "esModuleInterop": true,
+    // Needed to import React  without `import * as React from 'react'`
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "sourceMap": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "allowUnusedLabels": false,
+    "allowUnreachableCode": false,
+
+    // Allow absolute imports from the `src` directory
+    "baseUrl": "src"
+  },
+  // Allow absolute imports from the `src` directory
+  "include": ["src"],
+  "exclude": ["node_modules", "__test__"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
